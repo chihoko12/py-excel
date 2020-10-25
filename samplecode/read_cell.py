@@ -10,6 +10,7 @@ ws_new.column_dimensions['B'].width = 20
 path = Path('././books/17')
 for i, file in enumerate(path.glob('*.xlsx')):
     wb = load_workbook(file, data_only=True)
+    # data_only=True transfer only the calculated value, not the formula
     ws = wb['請求書']
 
     row_no = i + 1
