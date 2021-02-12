@@ -6,7 +6,7 @@ ws = wb.active
 blue_font = Font(name='Arial', color='0000FF', size=18, bold=True)
 
 for row in ws['B2':'F2']:
-  for cell in row:
-    cell.font = blue_font
+    for cell in row:
+        cell.font = blue_font
 
 wb.save('25.sales_turnover_changed.xlsx')
